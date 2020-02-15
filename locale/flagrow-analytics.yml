@@ -1,0 +1,38 @@
+flagrow-analytics:
+    admin:
+        popup:
+            title: Impostazioni Analytics # Analytics Settings
+
+            section:
+                googleAnalytics: Google Analytics
+                piwik: Piwik
+
+            field:
+                statusGoogle: Attiva Google Analytics # Enable Google Analytics
+                googleTrackingCode: Codice ID di tracciamento # Tracking Code ID
+                statusPiwik: Attiva Piwik # Enable Piwik
+                piwikUrl: Dominio Piwik oppure URL # Piwik domain or url
+                piwikSiteId: ID sito # Site ID
+                piwikTrackSubdomain: Traccia i visitatori in tutti i sottodomini di Flarum # Track visitors across all subdomains of Flarum
+                piwikPrependDomain: Anteponi il dominio del sito al titolo della pagina durante il tracciamento # Prepend the site domain to the page title when tracking
+                piwikHideAliasUrl: Nel rapporto "Outlinks", nascondi i click ad alias di URl conosciuti # In the "Outlinks" report, hide clicks to known alias URLs
+                piwikAliasUrl: Alias URL # Alias Url
+                piwikTrackAccounts: Traccia gli account degli utenti individualmente # Track individual user accounts
+                piwikAuthToken: Token di autenticazione # Authentication Token
+
+            placeholder:
+                piwikAuthToken: |
+                     Inserisci il token per abilitare le statistiche di Piwik nel pannello amministrativo.
+                     Puoi trovarlo sotto Settings > Personal > API Authentication Token.
+                    # |
+                    # Fill this token to enable a Piwik stats tab in the admin panel.
+                    # You can find it in Settings > Personal > API Authentication Token.
+            trackAccounts:
+                none: Non tracciare # Do not track
+                username: Traccia per nome utente # Track by username
+                email: Traccia per e-mail # Track by email
+
+        page:
+            nav:
+                title: Analytics
+                description: Dai un'occhiata alle statistiche # Take a look at Statistics

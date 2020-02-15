@@ -1,0 +1,41 @@
+fof-follow-tags:
+  forum:
+    settings:
+      notify_new_discussion_label: Qualcuno ha creato una discussione in un tag che seguo # Someone creates a discussion in a tag I'm following
+      notify_new_post_label: Qualcuno ha inviato un messaggio in un tag che seguo # Someone posts in a tag I'm following
+
+
+    index:
+      follow_tag_button: Segui # Follow
+      unfollow_tag_button: Non seguire # Stop Following
+
+
+    sub_controls:
+      follow_button: => fof-follow-tags.ref.follow
+      following_button: => fof-follow-tags.ref.following
+      following_text: Notifica se ci sono nuove discussioni.
+      hiding_button: => fof-follow-tags.ref.hiding
+      hiding_text: Nascondi le discussioni dalla pagina Tutte le discussioni. # Hide discussions from All Discussions page.
+      ignoring_button: => fof-follow-tags.ref.ignoring
+      ignoring_text: Non notificare. # Never be notified.
+      lurking_button: => fof-follow-tags.ref.lurking
+      lurking_text: Notifica se ci sono nuove discussioni e messaggi. # Be notified of all new discussions and replies.
+      not_following_button: Non seguire # Not Following
+      not_following_text: "Notifica solo quando @menzionato." # "Be notified only when @mentioned."
+      notify_alert_tooltip: Notifica sul forum se ci sono nuove discussioni o messaggi # Get a forum notification when there are new discussions or posts
+      notify_email_tooltip: Notifica via e-mail se ci sono nuove discussioni o messaggi # Get an email when there are new discussions or posts
+
+    notifications:
+      new_discussion_text: "{username} ha creato una discussione" # "{username} started"
+      new_post_text: "{username} ha inviato un messaggio" # "{username} posted"
+
+  email:
+    newDiscussionInTag: "[Tag | Nuova Discussione] titolo" # "[Tag | New Discussion] title"
+    newPostInTag: "[Tag | Nuovo Messaggio] titolo" # "[Tag | New Post] title"
+
+  ref:
+    follow: Segui # Follow
+    following: Seguendo # Following
+    hiding: Nascondendo # Hiding
+    ignoring: Ignorando # Ignoring
+    lurking: Celando # Lurking

@@ -1,0 +1,9 @@
+fof-custom-footer:
+  admin:
+    settings:
+      title: Configurazione personalizzata del footer # Custom Footer Configuration
+
+      text: Testo del footer # Text for Footer
+      height: Altezza del footer # Height of Footer
+      css: CSS
+      js: JS

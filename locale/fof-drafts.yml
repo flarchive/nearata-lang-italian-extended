@@ -1,0 +1,15 @@
+fof-drafts:
+  admin:
+    permissions:
+      start: Creare bozza per una discussione # Create discussion drafts
+  forum:
+    composer:
+      title: Salva bozza # Save Draft
+      alert: Bozza salvata # Draft saved.
+      exit_alert: Vuoi scartare i cambiamenti alla bozza? # Discard changes to draft?
+    dropdown:
+      empty_text: Non hai salvato alcuna bozza # You didn't save any drafts
+      title: Bozze # Drafts
+      button: Cancella bozza # Delete Draft
+      tooltip: => fof-drafts.forum.dropdown.title
+      alert: Sei sicuro di voler cancella la bozza? # Are you sure you want to delete your draft?

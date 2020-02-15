@@ -1,0 +1,65 @@
+fof-masquerade:
+    forum:
+        alerts:
+            profile-completion-required: Devi completare i campi di seguito # Please complete the necessary profile fields below.
+        buttons:
+            view-profile: Vedi profilo # View profile
+            save-profile: Salva # Save
+        fields:
+            select:
+                none-optional: Nessuna opzione selezionata (opzionale) # No option selected (optional)
+                none-required: Seleziona un'opzione (obbligatorio) # Please select an option (required)
+            boolean:
+                yes: Si # Yes
+                no: No
+    admin:
+        title: Masquerade
+        general-options: Opzioni generali # General options
+        buttons:
+            add-field: Inserisci campo # Create field
+            edit-field: Salva # Save changes
+            delete-field: Cancella campo # Delete field
+        permissions:
+            have-profile: Può avere un profilo masquerade # Have masquerade profile
+            view-profile: Può vedere un profilo masquerade # View masquerade profile
+        menu:
+            description: Configura i campo del profilo utente. # Configure user profile fields.
+        fields:
+            title: Campo # Fields
+            add: Aggiungi campo {field} # Add field {field}
+            edit: Modifica campo {field} # Edit field {field}
+            name: Nome campo # Field name
+            name-help: L'etichetta del campo visibile pubblicamente (non traducibile) # The publicly visible (non-translatable) field label.
+            description: Descrizione campo # Field description
+            description-help: Descrizione del campo (opzionale) # An optional description to explain the use/need of this field.
+            required: Segna come campo obbligatorio # Mark field obligatory
+            on_bio: Mostra la risposta di questo campo nella biografia dell'utente # Show answer to this field in user bio
+            type: Tipo # Type
+            validation: Validazione # Validation
+            validation-help: >
+                Controlla le <a>Regole di convalida laravel</a> supportate. Es:
+                "string|min:5" oppure "url".
+              # >
+              # Check the supported <a>Laravel validation rules</a>. Eg:
+              # "string|min:5" or "url".
+            prefix: Prefisso campo # Field prefix
+            prefix-help: Mostra il prefisso davanti ai valori immessi dall'utente per questo campo. # Shows your prefix in front of values entered by the user for this field.
+            icon: Icona # Icon
+            icon-help: >
+                Mostra un'icona davanti ai valori inseriti dall'utente. Per riferimento alle
+                icone disponibili, controlla il sito di <a>FontAwesome</a>. Usa i nomi delle
+                icone con il prefisso "fa-", come "fas fa-info"
+              # >
+              # Shows an icon in front of values entered by the user. For a reference of
+              # available icons, check the <a>FontAwesome website</a>. Use icon names with
+              # the "fa-" prefix, like "fas fa-info".
+            force-user-to-completion: Obbliga l'utente a completare il profilo # Force user to complete profile
+            options: Opzioni # Options
+            option-new: Nuova opzione # New option
+            option-comma-warning: L'etichetta di un'opzione non può contenere virgole (",") # The label of an option cannot contain any comma (",").
+        types:
+            advanced: Avanzate # Advanced
+            boolean: Casella di controllo # Checkbox
+            email: E-mail # Email
+            select: Menu a tendina # Dropdown
+            url: URL

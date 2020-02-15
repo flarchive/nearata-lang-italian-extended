@@ -1,0 +1,27 @@
+fof-stopforumspam:
+  admin:
+    settings:
+      title: FoF Stop Forum Spam # FriendsOfFlarum Stop Forum Spam
+
+      username_label: Controlla nome utente # Username Spam Check
+      ip_label: Controlla indirizzo IP # IP Address Spam Check
+      email_label: Controlla e-mail # Email Spam Check
+
+      frequency_label: Soglia # Threshold
+      frequency_text: Il numero di segnalazioni tra tutti i controlli attivati che faranno scattare il filtro anti spam.
+      # The number of spam reports between all enabled checks that will trip the spam filter.
+      frequency_example_text: "Es: Se l'email ha 1 (una) segnalazione, e l'ip ha 2 (due) segnalazioni, sono 3 (tre) segnalazioni in totale. Se la soglia è impostata a 3 (tre), ciò impedirà la registrazione."
+      # "Ex: If the email has 1 hit, and the ip has 2 hits, there will be 3 hits in total. If the threshold is set to 3 or less it will prevent the registration."
+
+      api_key_label: Chiave API # API Key
+      api_key_text: Hai attivato fof/spamblock attivo, adesso hai la l'opzione di segnalare gli utenti a StopForumSpam in modo da tenere il tuo forum libero dallo spam.
+      # You have fof/spamblock enabled, you now have the option to report spammers to StopForumSpam in order to keep the greater forum community spam free.
+      api_key_instructions_text: <register>Iscriviti a StopForumSpam</register>. Poi dovrai <key>ottenere una chiave API</key> # <register>Sign up for StopForumSpam</register>. Then you will need to <key>obtain an API key</key>.
+
+  forum:
+    message:
+      spam: Le tue info sono state contrassegnate come spam. # Your info has been marked as spam.
+
+  api:
+    error:
+      unknown: Impossibile segnalare l'utente a StopForumSpam. # Failed to report user to StopForumSpam.

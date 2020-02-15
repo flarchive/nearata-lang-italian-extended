@@ -1,0 +1,10 @@
+fof-auth-gitlab:
+  admin:
+    gitlab_settings:
+      client_id_label: ID Applicazione # Application ID
+      client_secret_label: Segreto # Secret
+      title: FoF GitLab Login # FriendsOfFlarum GitLab Login
+
+  forum:
+    log_in:
+      with_gitlab_button: Accedi con GitLab # Log In with GitLab

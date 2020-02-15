@@ -1,0 +1,94 @@
+fof-terms:
+    admin:
+        settings:
+            title: Impostazioni FoF Terms # Terms Settings
+
+            field:
+                signup-legal-text: Testo aggiuntivo sul modulo di registrazione # Additional text on signup form
+                hide-updated-at: Non mostrare la data di aggiornamento dei termini quando un aggiornamento è disponibile
+                # Do not show the date of update of the terms when an update is available
+                date-format: Formato data # Date format
+                date-format-help: Puoi utilizzare un qualsiasi formato <a>Moment.js</a> valido. Lascia vuoto per usare il formato predefinito.
+                # You can use any valid <a>Moment.js</a> format. Leave field empty for default.
+
+        titles:
+            policies: Informative # Policies
+
+        buttons:
+            new-policy: Nuova informativa # New Policy
+            edit-policy: Modifica informativa # Edit Policy
+            add-policy: Aggiungi informativa # Add Policy
+            save-policy: Salva informativa # Save Policy
+            delete-policy: Cancella informativa # Delete Policy
+            set-to-now: Imposta la data di oggi # Set to now
+
+        messages:
+            delete-policy-confirmation: >
+                    Ciò cancellerà permanentemente l'informativa {name} e relative date di accettazione dal database.
+                    Assicurati di aver eseguito un backup di queste date se ne hai bisogno per motivi legali.
+                    Sei sicuro di voler cancellare questa informativa?
+                # >
+                # This will permanently delete the policy {name} and the associated accept dates from the database.
+                # Please make sure you made a backup of those dates if you need them for legal reasons.
+                # Are you sure you want to delete this policy ?
+        policies:
+            name: Nome # Name
+            name-help: Questo nome verrà visualizzato accanto alla casella di controllo e come titolo del modale.
+            # This name will be shown beside the checkbox and as the title of the update modal.
+            url: URL
+            url-help: Il link alla pagina dove puoi leggere l'informativa. Verrà aperto un nuovo tab quando cliccato.
+            # The URL to the page where you can read the terms. Will open in a new tab when clicked.
+            update-message: Aggiorna messaggio # Update Message
+            update-message-help: Un messaggio da mostrare agli utenti per mostrare chi non ha ancora accettato i nuovi termini.
+            # A message to show to existing users who have not yet accepted the latest terms.
+            terms-updated-at: Ultimo aggiornamento il # Updated at
+            terms-updated-at-placeholder: YYYY-MM-DD (hh:mm:ss)
+            terms-updated-at-help: >
+                    La data dell'ultimo aggiornamento dei termini.
+                    Impostando questo valore si richiede a tutti gli utenti di accettarli nuovamente.
+                    Deve essere nel passato (altrimenti gli utenti non sarebbero mai in grado di accettare dopo la data e superare il modale)
+                # >
+                # The date of the last terms update.
+                # Setting this value will require all users who accepted prior to that date to accept again.
+                # Must be in the past (otherwise users would never be able to accept after the date and get past the modal).
+            export-url: Esporta URL # Export URL
+            export-url-help: >
+                    Gli utenti che hanno il permesso per esportare tutti i dati delle informative,
+                    possono accedere a questi link per scaricare la lista di utenti che hanno accettato questa informativa.
+                    Puoi trovare maggiori informazioni sulle opzioni disponibili sulla <a>wiki</a> dell'estensione.
+                # >
+                # Any user with permission "Export all policies data" can access those URLs to download the list of users who accepted this policy.
+                # You can find more details about the available options on the <a>extension wiki</a>.
+        permissions:
+            see-user-policies-state: Vedere lo stato delle informative degli utenti # See the user policies state
+            postpone-policies-accept: Posticipare l'accettazione dei nuovi termini # Can postpone accepting the new terms
+            export-policies: Esportare tutti i dati degli utenti e le informative # Export all users and policies data
+
+    forum:
+        signup:
+            i-accept: Accetto <a>{policy}</a> # I accept the <a>{policy}</a>
+            must-accept: "{policy} deve essere accettata." # The {policy} must be accepted.
+
+        accept-modal:
+            title: Termini aggiornati # Terms Update
+            updated-at: I termini sono stati aggiornati in dat {date} # The terms were updated on {date}
+            updated-recently: Alcune informative sono state aggiornate dalla tua ultima visita # The terms were updated since your last visit
+            i-accept: Accetto la nuova <a>{policy}</a> # I accept the new <a>{policy}</a>
+            accept: Conferma # Confirm
+            close: Adesso puoi chiudere questa schermata # You can now close this modal
+
+        state-modal:
+            title: Stato dei termini per l'utente {username} # Terms accept state for user {username}
+            accepted-at: Accettati in data {date} # Accepted at {date}
+            not-accepted: Non accettato # Not accepted
+
+        update-alert:
+            must-accept-message: Abbiamo temporaneamente ristretto l'accesso al tuo account mentre controlli i nuovi termini.
+            # We've temporarily restricted access to your account while you check out the new terms.
+            can-accept-message: Abbiamo recentemente aggiornato i termini. Devi accettarli per continuare a utilizzare il sito web.
+            # We recently updated the terms. You must accept them to continue using this website.
+            review: Clicca qui per visionare e accettare i nuovi termini
+            # Click here to review and accept the new terms
+
+        user_controls:
+            state_button: Stato informative # Terms accept state

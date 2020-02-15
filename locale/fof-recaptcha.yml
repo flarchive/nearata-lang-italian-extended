@@ -1,0 +1,12 @@
+fof-recaptcha:
+  admin:
+    settings:
+      help_text: Ottieni <a>qui</a> le tue credenziali di Google reCAPTCHA. # Obtain your Google reCAPTCHA credentials <a>here</a>.
+
+      type_label: Tipo reCAPTCHA # reCAPTCHA Type
+
+      site_key_label: Chiave sito # Site Key
+      secret_key_label: Chiave segreta # Secret Key
+
+validation:
+  recaptcha: Validazione reCAPTCHA fallita. # reCAPTCHA validation failed.

@@ -1,0 +1,33 @@
+fof-merge-discussions:
+  forum:
+    modal:
+      title: Unisci discussioni # Merge Discussions
+
+      type_target_label: Unisci a questa # Merge into me
+      type_target_help_text: Seleziona le discussioni che vuoi unire a <b>{title}</b>. # Choose discussion(s) to merge into <b>{title}</b>.
+
+      type_from_label: Unisci questa discussione a un'altra # Merge this discussion into another
+      type_from_help_text: Seleziona una discussione a cui unire <b>{title}</b>. # Choose target discussion to merge <b>{title}</b> into.
+
+      load_preview_button: Anteprima # Preview
+      submit_button: => fof-merge-discussions.ref.merge
+
+    discussion:
+      merge: => fof-merge-discussions.ref.merge
+
+    post:
+      merged: Unito <b>{count}</b> messaggio da {titles}.|Unito <b>{count}</b> messaggi da {titles}.
+      # Merged <b>{count}</b> post from {titles}.|Merged <b>{count}</b> posts from {titles}.
+
+  admin:
+    permissions:
+      merge_discussions_label: Unire discussioni # Merge discussions
+
+  api:
+    error:
+      merging_failed: Impossibile unire le discussioni. # Failed to merge discussions.
+      updating_failed: Impossibile aggiornare i dettagli della discussione. # Failed to update discussion details.
+      deleting_failed: Impossibile eliminare le discussioni vuote. # Failed to delete empty discussions.
+
+  ref:
+    merge: Unisci # Merge

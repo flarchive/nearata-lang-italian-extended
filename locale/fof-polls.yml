@@ -1,0 +1,44 @@
+fof-polls:
+  admin:
+    permissions:
+      moderate: Modificare e rimuovere un sondaggio # Edit & remove polls
+      self_edit: Permette agli utenti di modificare i prorpi sondaggi # Allow users to edit their own polls
+      start: Iniziare un sondaggio # Start a poll
+      vote: Votare i sondaggi # Vote on polls
+
+  forum:
+    days_remaining: Il sondaggio finisce {time}. # Poll ends {time}.
+    no_permission: Non puoi votare. # You don't have permission to vote
+    poll_ended: Questo sondaggio è finito. # This poll has ended.
+    public_poll: Visualizza elettori # View voters
+
+    composer_discussion:
+      add_poll: Aggiungi sondaggio # Add Poll
+      edit_poll: => fof-polls.forum.moderation.edit
+
+    modal:
+      add_title: Aggiungi sondaggio # Add a Poll
+      add_option_label: Aggiungi un'opzione # Add an Option
+      date_placeholder: Data fine sondaggio (Opzionale) # Poll end date (Optional)
+      edit_title: Modifica sondaggio # Edit Poll
+      include_question: Devi includere una domanda # You must include a question
+      max: Puoi avere un massimo di 10 (dieci) risposte # You can have a maximum of 10 answers
+      min: Devi includere un minimo di 2 (due) risposte # You must include a minimum of 2 answers
+      no_voters: Nessun voto # No Votes
+      option_placeholder: Risposta # Answer
+      options_label: Risposte # Answers
+      public_poll_label: Permetti agli utenti di vedere chi ha votato # Allow people to see who voted
+      question_placeholder: Domanda # Question
+      submit: Invia # Submit
+
+    moderation:
+      delete: Elimina sondaggio # Remove Poll
+      delete_confirm: Sei sicuro di voler eliminare questo sondaggio # Are you sure you want to delete this poll?
+      edit: Modifica sondaggio # Edit Poll
+
+    tooltip:
+      badge: Sondaggio # Poll
+      votes: "1 voto|{count} voti" # "1 vote|{count} votes"
+
+    votes_modal:
+      title: Elettori # Voters

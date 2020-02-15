@@ -1,0 +1,16 @@
+fof-forum-statistics-widget:
+  forum:
+    navbar:
+      widget_title: Statistiche forum # Forum Statistics
+      discussions_count: "Discussioni: {discussionsCount}" # "Discussions: {discussionsCount}"
+      posts_count: "Messaggi: {postsCount}" # "Posts: {postsCount}"
+      users_count: "Utenti: {usersCount}" # "Members: {usersCount}"
+      latest_member: "Ultimo iscritto: " # "Latest Member: "
+  admin:
+    settings:
+      title: Impostazioni widget # Widget Settings
+      widget_order_label: Ordine del widget # Widget Order
+      widget_helper_text: "Modifica questa impostazione per aggiustare la posizione del widget nella navigazione laterale.
+      Maggiore il numero, più alta la sua posizione nella lista (il valore può essere sia positivo che negativo)"
+      # "Edit this setting to adjust this widget's position on the sidenav section of your Flarum forum.
+      # The higher the number, the higher this widget will be on the sidenav items list (this value can be either positive or negative)."

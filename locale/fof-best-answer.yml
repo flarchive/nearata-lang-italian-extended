@@ -1,0 +1,31 @@
+fof-best-answer:
+  admin:
+    permissions:
+      best_answer: Seleziona migliore risposta (propria discussione) # Select Best Answer (own Discussion)
+      best_answer_not_own_discussion: Seleziona migliore risposta (discussioni altrui) # Select Best Answer (not own Discussion)
+    settings:
+      title: FoF Best Answer # FriendsOfFlarum Best Answer
+      allow_select_own_post: Consenti agli utenti di selezionare i propri messaggi # Allow users to select their own posts
+      select_best_answer_reminder_days: Ricorda agli utenti di selezionare la risposta migliore dopo X giorni # Remind users to select a best answer after X days
+      schedule_on_one_server: Usa la direttiva 'onOneServer()' per l'utilità di pianificazione (richiede Redis/Memcache)
+      # Use 'onOneServer()' directive for the task scheduler (requires Redis/Memcache)
+      schedule_stop_overnight: Previeni la pianificazione durante le ore non social (9 sera - 8 mattina locale)
+      # Prevent the reminder scheduler from running during unsocial hours (9pm - 8am server time)
+      schedule_log_output: Aggiungi l'output dello scheduler alla memoria del registro # Append scheduler output to log storage
+      remind_tag_ids: Per limitare i promemoria a tag specifici, inserisci l'ID del tag qui (separati da una virgola)
+      # To restrict reminders to particular tags, enter the tag ID's here (comma seperated)
+      use_alt_ui: Usa layout alternativo (tasti di migliore risposta dopo il messaggio) # Use alternative layout (best answer buttons in post footer)
+  forum:
+    answered_badge: Risposto # Answered
+    this_best_answer: Seleziona migliore risposta # Select Best Answer
+    remove_best_answer: Deseleziona migliore risposta # Unselect Best Answer
+    best_answer_button: Migliore risposta # Best Answer
+    best_answer_label: impostato da <a>{username}</a> {time_set} # set by <a>{username}</a> {time_set}
+
+    notification:
+      content: Seleziona una migliore risposta se la tua domanda ha ricevuto risposta # Please select a Best Answer if your question has been answered
+      awarded: Il tuo messaggio è stato impostato come migliore risposta da {username} # Your post was set as the best answer by {username}
+      awarded_email: Il tuo messaggio è stato impostato come migliore risposta da parte dell'utente # Your post was set as the best answer by user
+      select_email_title: Sei riuscito a risolvere il tuo problema? # Did you manage to sort your problem?
+      preferences:
+        awarde_best_answer: Quando qualcuno imposta il mio messaggio come migliore risposta # When someone sets my post as a best answer

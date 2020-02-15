@@ -1,0 +1,8 @@
+fof-secure-https:
+  admin:
+    settings:
+      title: Configurazione # Configuration
+      replace: Mostra immagine tramite proxy # Proxy images through HTTPS
+  forum:
+    removed: Immagine rimossa a causa della mancanza di supporto per HTTPS. # Image removed due to the lack of support for HTTPS.
+    show: Mostra comunque # Show Anyway

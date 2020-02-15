@@ -1,0 +1,84 @@
+fof-ban-ips:
+  forum:
+    ban_ip_button: => fof-ban-ips.ref.ban_ip_button
+    unban_ip_button: => fof-ban-ips.ref.unban_ip_button
+
+    modal:
+      ban_options_only_ip: Banna solo l'IP attuale (<code>{ip}</code>) # Only ban current IP (<code>{ip}</code>)
+      ban_options_all_ip: Banna tutti gli IP usati da <i>{username}</i> # Ban all IPs used by <i>{username}</i>
+      ban_ip_no_users: Nessun utente sarà bannato # No one else will be banned
+
+    user_badge:
+      banned_tooltip: Bannato # Banned
+
+    user_controls:
+      ban_button: => fof-ban-ips.ref.ban_label
+      unban_button: => fof-ban-ips.ref.unban_label
+
+  admin:
+    permissions:
+      ban_ip_label: => fof-ban-ips.ref.ban_ip_addresses
+      view_banned_ip_list_label: Vedere la lista degli IP bannati # View banned IP address list
+
+    page:
+      create_button: => fof-ban-ips.ref.ban_ip_button
+
+      creator_label: Creato da # Creator
+      user_label: Utente # User
+      address_label: => fof-ban-ips.ref.address_label
+      reason_label: => fof-ban-ips.ref.reason_label
+      date_label: Data # Date
+
+    modal:
+      update_title: Aggiorna IP bannato # Update Banned IP
+      ban_ip_no_users: Nessun utente sarà bannato # No one will be banned
+
+    nav:
+      title: Banna IP # Ban IPs
+
+      desc: Aggiungi, rimuovi e visualizza gli indirizzi IP bannati # Add, remove, and view banned IP addresses.
+
+    empty_text: Non ci sono IP bannati # No banned IPs found.
+
+  error:
+    banned_ip_message: Autorizzazione fallita. # Authorization failed.
+    no_ips_found_message: IP non trovato # No IP(s) found for user.
+
+  lib:
+    modal:
+      title: => fof-ban-ips.ref.ban_ip_addresses
+      unban_title: => fof-ban-ips.ref.unban_ip_addresses
+
+      address_label: => fof-ban-ips.ref.address_label
+      reason_label: => fof-ban-ips.ref.reason_label
+
+      check_button: Controlla # Check
+      save_button: Salva # Save
+
+      ban_ip_confirmation: "Sei sicuro di voler bloccare questo indirizzo IP?"
+      # "Are you sure you want to block this IP address from use on the forum? This will block users with this IP address(es) from logging in and registering."
+      ban_ip_users: L'utente {users} sarà bannato|Gli utenti {users} saranni bannati
+      # User {users} will be banned|Users {users} will be banned
+
+      unban_ip_confirmation: Sei sicuro di voler sbannare questo utente e tutti gli utenti non bannati da questo/i IP?
+      # Are you sure you want to unban this user and all other users not banned by other IPs?
+      unban_options_only_ip: Sbanna solo l'IP attuale (<code>{ip}</code>) # Only unban current IP (<code>{ip}</code>)
+      unban_options_all_ip: Sbanna tutti gli IP utilizzati da <i>{username}</i> # Unban all IPs used by <i>{username}</i>
+      unban_ip_no_users: Nessun utente sarà sbannato # No one else will be unbanned
+      unban_ip_users: L'utente {users} sarà sbannato|Gli utenti {users} saranno sbannati # User {users} will be unbanned|Users {users} will be unbanned
+      unbanned_ips: Sbanna <code>{ips}</code>. # Unbanned <code>{ips}</code>.
+
+      ban_button: => fof-ban-ips.ref.ban_label
+      unban_button: => fof-ban-ips.ref.unban_label
+
+  ref:
+    ban_label: Banna # Ban
+    ban_ip_addresses: Banna IP # Ban IP(s)
+    ban_ip_button: Banna IP # Ban IP
+
+    unban_label: Sbanna # Unban
+    unban_ip_addresses: Sbanna IP # Unban IP(s)
+    unban_ip_button: Sbanna IP # Unban IP
+
+    address_label: Indirizzo IP # IP Address
+    reason_label: Motivo # Reason

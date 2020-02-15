@@ -1,0 +1,14 @@
+fof-github-sponsors:
+  admin:
+    account_types:
+      user: Utente # User
+      organization: Organizzazione # Organization
+
+    settings:
+      title: FoF GitHub Sponsors # FriendsOfFlarum GitHub Sponsors
+      desc: Ottieni il tuo Token API <a>qua</a>. Devi impostare come permessi user e, sotto admin:org, read:org
+
+      api_token_label: Token API # API Token
+      account_type_label: Tipo di account # Account Type
+      login_label: Accedi # Login
+      group_label: Gruppo da assegnare # Group to Assign

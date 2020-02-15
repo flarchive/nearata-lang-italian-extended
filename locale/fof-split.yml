@@ -1,0 +1,17 @@
+fof-split:
+    admin:
+        permissions:
+            split_discussion_label: Spostare i messaggi dalle discussioni # Split posts from discussions
+    forum:
+        post:
+            was_split_to: "{count} messaggio è stato spostato in {target}.|{count} sono stati spostati in {target}."
+            # "{count} post was split to {target}.|{count} posts were split to {target}."
+            was_split_from: "{count} messaggio è stato spostato da {target}.|{count} messaggi sono stati spostati da {target}."
+            # "{count} post was split from {target}.|{count} posts were split from {target}."
+        split:
+            from: Dividi da qui # Split from here
+            to: A qui # Split to here
+        modal:
+            title: Dividi discussione # Split discussion
+            new_discussion_label: Inserisci il titolo della nuova discussione # Specify the title for the new discussion
+            submit_button: Sposta # Split

@@ -1,0 +1,24 @@
+fof-prevent-necrobumping:
+  forum:
+    composer:
+      warning:
+        title: Questa discussione è vecchia di <b>{time}</b>. # This discussion is more than <b>{time}</b> old.
+        description: E' molto probabile che non abbia bisogno di ulteriore discussione.
+        # It is very likely that it does not need any further discussion and thus bumping it serves no purpose.
+        checkbox_label: Capisco che questa discussione sia vecchia ma voglio comunque rispondervi. # I am aware that this discussion is rather old but would still like to reply.
+        error: Non puoi rispondere a questa discussione perché troppo vecchia. # This discussion is too old to reply to.
+
+  admin:
+    settings:
+      days_label: Giorni # Days
+      days_help: Una discussione sarà contrassegnata come vecchia se il numero di giorni impostati saranno passati dall'ultimo messaggio. Usa <code>0</code> per disattivarlo.
+      # A discussion will be marked as old when the amount of days specified has passed since the last post on that discussion was posted. Use <code>0</code> to disable it by default.
+
+      message_title_label: Titolo del messaggio personalizzato # Custom Message Title
+      message_title_help: 'Usa <code>[time]</code> per il testo temporale, es. "14 giorni".' # 'Use <code>[time]</code> for the time text, e.g. "14 days".'
+      message_description_label: Messaggio della descrizione personalizzato # Custom Message Description
+      message_agreement_label: Messaggio dell'accordo personalizzato (Casella di controllo) # Custom Message Agreement (Checkbox)
+
+      tags_title: Tag # Tags
+      tags_help: Sostituisci i giorni globali per un tag specifico. Vuoto significa usare il valore predefinito. Se una discussione ha più tag con valori di giorni differenti, verrà utilizzato il valore più basso configurato.
+      # Override the global days for a specific tag. Empty means use default value. If a discussion has multiple tags with different day values, it will use the smallest amount of days configured.

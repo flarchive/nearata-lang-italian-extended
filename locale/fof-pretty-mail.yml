@@ -1,0 +1,27 @@
+fof-pretty-mail:
+  admin:
+    nav:
+      desc: Personalizza i modelli HTML delle tue e-mail. # Customize your HTML email templates.
+    settings:
+      label: Modelli e-mail # Email Templates
+      reset: Ripristina predefinito # Revert to Default
+      confirm: Sei sicuro di voler utilizzare il modello predefinito di Flarum # Are you sure you want to revert to the stock email template for
+      default: Modello predefinito # Default Template
+      newPost: "[Flarum/subscriptions] E-mail nuovo messaggio" # Flarum/subscriptions New Post Email
+      userMentioned: "[Flarum/mentions] E-mail utente menzionato" # Flarum/mentions User Mentioned Email
+      postMentioned: "[Flarum/mentions] E-mail messaggi menzionati" # Flarum/mentions Post Mentioned Email
+      notifications: Modelli di notifica # Notification templates
+      notificationHelp: >
+        "E' consigliato usare '$forumStyle' per queste e-mail visto che potrebbero contenere BBCODE.
+        Queste e-mail hanno anche '$user' disponibile che contiene l'intero modello utente del'utente che viene inviato per e-mail."
+      # 'It is recommended to use "$forumStyle" for these emails as they may contain BBCODE. These emails also have "$user" available which contains the entire user model of the user being emailed.'
+      help: >
+        "'$body' conterrà il contenuto effettivo dell'e-mail, '$forumStyle' conterrà <strong>l'intero CSS del forum</strong>,
+        '$baseUrl' conterrà il link del forum, '$settings' ti permetterà di interagire con il SettingsRepositoryInterface,
+        e '$link' conterrà il link all'interno dell'e-mail. Vedi le e-mail per capire come utilizzare queste variabili."
+      # '"$body" will contain the actual content of the email, "$forumStyle" contains the <strong>entire forum CSS</strong>, "$baseUrl" contains your forum URL, "$settings" allows you to interact with the SettingsRepositoryInterface, and "$link" contains the link within the email. See each template for how to use each variable.'
+    css_settings:
+      label: Impostazioni CSS # CSS settings
+      help: Puoi decidere di includere il CSS del tuo forum nel codice HTML della e-mail. Se lo abiliti, potresti avere problemi con alcuni provider di posta elettronica.
+      # You can choose to include the forum's CSS in the email's HTML code. If you enable this, you may have issues with certain email providers.
+      switch_label: Includi il CSS completo del forum # Include full forum CSS

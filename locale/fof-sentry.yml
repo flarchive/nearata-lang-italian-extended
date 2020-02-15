@@ -1,0 +1,7 @@
+fof-sentry:
+  admin:
+    settings:
+      dsn_label: Sentry DSN
+      user_feedback_label: Feedback dell'utente # User Feedback
+      javascript_label: Segnala errori JavaScript # Report JavaScript Errors
+      javascript_console_label: Cattura console JavaScript # Capture JavaScript Console

@@ -1,0 +1,37 @@
+reflar-doorman:
+  forum:
+    sign_up:
+      invalid_doorkey: Il codice di invito che hai inserito non è valido. # The invite code your entered is invalid.
+      doorkey_required: Inserisci il codice di invito. # Please enter an invite code.
+      doorman_placeholder: Codice di invito # Invite Code
+      doorman_placeholder_optional: Codice di invito (opzionale) # Invite Code (optional)
+
+  admin:
+    invalid_doorkey: Il codice di invito fornito non è valido. # The invite code you provided is invalid.
+    doorkey_required: Devi fornire un codice di invito # You must provide an Invite Code
+    nav:
+      desc: Crea codici di invito da far utilizzare agli utenti durante la registrazione per assegnargli un gruppo automaticamente
+      # Create invite codes for users to sign up and be assigned to a group
+    page:
+      title: Doorman
+      doorkey:
+        used_times: "1 Utilizzo rimasto|{remaining} Utilizzi rimasti" # "1 Use left|{remaining} Uses left"
+        title: Codici di invito # Invite Codes
+        help:
+          key: "Chiave: Il codice che inserirà l'utente durante la registrazione." # "Key: Code the user will type in when registering."
+          group: "Gruppo: Il gruppo che verrà assegnato all'utente una volta registrato." # "Group: The group the user will be added to when the register."
+          max: "Limite di utilizzi: Il numero di volte che il codice può essere utilizzato, imposta a 0 per utilizzi illimitati."
+          # "Max Uses: The max number of times the code can be used, set to 0 for unlimited uses"
+          activates: "Attiva l'utente: Attiva l'utente autotmaticamente una volta registrato, niente e-mail di conferma."
+          # "Activates User: Automatically activates the user when they register."
+        warning: "Questo codice di invito è stato già utilizzato." # This invite code has been used its max number of times.
+        key: Chiave # Key
+        max_uses: Limite di utilizzi # Max Uses
+        heading:
+          key: Chiave # Key
+          group: Gruppo # Group
+          activate: Attiva l'utente # Activates User
+          max_uses: Limite di utilizzi # Max Uses
+        allow-public:
+          title: Permetti registrazione pubblica # Allow public Sign Up
+          switch-label: Rendi opzionale il codice invito al momento della registrazione # Make invite code optional when signing up

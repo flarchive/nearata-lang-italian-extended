@@ -1,0 +1,9 @@
+fof-open-collective:
+  admin:
+    settings:
+      title: FoF Open Collective # FriendsOfFlarum Open Collective
+      desc: Ottieni la tua chiave API su <a>https://opencollective.com/applications</a>. # Obtain your API key from <a>https://opencollective.com/applications</a>.
+
+      api_key_label: Chiave API # API Key
+      slug_label: Slug collective # Collective Slug
+      group_label: Gruppo da assegnare # Group to Assign

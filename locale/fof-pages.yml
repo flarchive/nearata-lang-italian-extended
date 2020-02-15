@@ -1,0 +1,50 @@
+fof-pages:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These strings are used in the Edit Page modal dialog.
+    edit_page:
+      content_label: => fof-pages.ref.content
+      content_placeholder: => fof-pages.ref.content
+      delete_page_button: Cancella pagina # Delete Page
+      delete_page_confirmation: "Sei sicuro di voler cancellare questa pagina?" # "Are you sure you want to delete this page?"
+      hidden_label: Salva come bozza # Save as Draft
+      html_label: Abilita HTML # Enable Html
+      set_as_home_page_confirmation: Sei sicuro di voler impostare questa pagina come home? # "Are you sure you want to set this page as your home page?"
+      slug_label: => fof-pages.ref.slug
+      slug_placeholder: => fof-pages.ref.slug
+      submit_button: => core.ref.save_changes
+      title: => fof-pages.ref.create_page
+      title_label: => fof-pages.ref.title
+      title_placeholder: => fof-pages.ref.title
+      url_label: => fof-pages.ref.url
+      url_placeholder: => fof-pages.ref.url
+
+    # These strings are used in the pages page.
+    nav:
+      pages_button: => fof-pages.ref.pages
+      pages_text: Crea pagine statiche personalizzate. # Create custom static Pages.
+
+    # Strings in this namespace are referenced by two or more unique keys.
+    pages:
+      about_text: Crea e gestisci pagine statiche. # Create and manage static Pages.
+      create_button: => fof-pages.ref.create_page
+
+    # These strings are used in the pages list.
+    pages_list:
+      empty_text: Non ci sono pagine. # It looks like there are no pages here.
+      title: => fof-pages.ref.title
+
+  # These strings are used in the navigation bar.
+  ref:
+    content: Contenuto # Content
+    create_page: Crea pagina # Create Page
+    pages: Pagine # Pages
+    slug: Slug
+    title: Titolo # Title
+    url: URL # Url
