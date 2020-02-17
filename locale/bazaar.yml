@@ -1,0 +1,148 @@
+# https://github.com/extiverse/bazaar
+bazaar:
+    admin:
+        loader:
+            is_loading: Elaborazione... # Processing..
+            error: Si è verificato un errore. Per ulteriori dettagli controlla la cronologia e i logs di Flarum.
+            # An error occured. Check the History tab and your Flarum log for details. Don't be afraid to report it to us.
+            refresh: Aggiorna pagina # Refresh page
+            close: Chiudi # Close
+            report_issue: Segnala un problema # Report an issue
+        nav:
+            title: Bazaar
+            description: Il mercato delle estensioni. # The extension marketplace.
+        header:
+            extensions: Esplora le estensioni # Browse extensions
+            tasks: Cronologia attività # Tasks history
+        modal:
+            dashboard:
+                title: Dashboard
+                visit-remote-dashboard: Visita dashboard # Visit dashboard
+                sync:
+                    switch: Sincronizza # Sync
+                    description: >
+                        Sincronizza le informazioni dell'estensione con {host} così, nel caso ci dovesse essere un aggiornamento per un estensione, verrai notificato di conseguenza.
+                        Inoltre, ti invieremo una notifica su estensioni non aggiornate.
+                    # Sync your extension information with {host} to receive timely notifications about new versions
+                    # of extensions you installed. In addition we will send you a regular notification about outdated
+                    # extensions on all your synced Bazaar enabled Flarum installations.
+            settings:
+                title: Flagrow Bazaar
+                field:
+                    token:
+                        label: Chiave API # API token
+                        description: La chiave api è richiesta per accedere al Flagrow extensions api. Se già impostato, puoi iniziare!
+                        # This api token is required to access the Flagrow extension api. If already set, you're good to go!
+                    use_cron_for_tasks:
+                        label: Cronjob # Cronjobs
+                        description: >
+                           Consentendo a un cronjob di elaborare le attività di Bazaar, questi processi
+                           hanno meno probabilità di subire un timeout. Per usare questa funzionalità
+                           è necessario essere in grado di configurare un cronjob.
+                           Per ulteriori informazioni, fai riferimento alla <a>Wiki</a>.
+                        # By allowing cronjobs to process Bazaar tasks, these processes
+                        # are less likely to timeout. Please note you need to be able to
+                        # configure the cronjob, refer to <a>the wiki</a>.
+                        toggle: Attiva # Use crons for task processing
+            connect-bazaar:
+                title: Connetti # Connect
+                description: >
+                    Collega il forum al tuo account personale su {host} per sbloccare funzioni avanzate; compreso
+                    una dashboard che ti offre una panoramica di tutte le tue installazioni di Flarum.
+                    Aggiungeremo nuove funzionalità come le notifiche se il tuo forum contiene estenzioni obsolete
+                    o di aggiornare tutte le tue installazioni centralmente.
+                # Connect your Flarum forum to your personal account on {host} to unlock advanced features; including
+                # a dashboard that gives you an health overview of all your connected Flarum installations. We will
+                # add more functionality like notifications when your forum contains outdated extensions or the ability
+                # to update all Flarum installations centrally.
+            requirements:
+                file-permissions:
+                    title: Permessi File # File permissions
+                    description: >
+                        Sembra che Bazaar abbia sufficienti autorizzazioni per scrivere
+                        file e/o cartelle, controlla la lista in basso. Per ulteriori
+                        informazioni, fai riferimento alla <a>wiki</a>.
+                php-memory_limit:
+                    title: Limite memoria
+                    description: >
+                        Consigliamo di far utilizzare a PHP almeno {required} di memoria, il tuo php.ini al momento utilizza {limit}.
+                        Anche se cerchiamo di aumentare il limite durante il runtime, il successo dipende da te.
+                        Per maggiori informazioni, fai riferimento <a>alla wiki</a>.
+                    # It seems Bazaar has insufficient permissions to write files
+                    # and/or directories, please review the list below. For further
+                    # information, refer to <a>the wiki</a>.
+        page:
+            state:
+                no_results_available: >
+                    Nessun risultato disponibile in questo momento
+                # It seems no results were available at this time.
+                not_authorized: >
+                    La tua autorizzazione api con flagrow.io è fallita. Potrebbe essere causato da una connessione internet instabile.
+                    Ricarica la pagina una volta ristabilita la connessione. Se il problema persiste, contattaci.
+                # Your authorization against our flagrow.io api failed. Possibly an unstable internet connection is causing this.
+                # Please refresh the page once your connection stabilised. If the problem persists, please get in touch with us.
+            button:
+                more: "Di più, carica la pagina {current} di {total}" # "More, load page {current} of {total}"
+                install: Installa # Install
+                uninstall: Disinstalla # Uninstall
+                enable: Attiva # Enable
+                disable: Disattiva # Disable
+                update: Aggiorna # Update
+                connect: Connetti # Connect
+                favorite_button: "Estensione preferita" # "Favorite extension"
+                remove_favorite_button: "Rimuovi l'estensione dalla tua lista dei preferiti" # "Remove extension from your favorites"
+                subscribe: Acquista abbonamento # Buy subscription
+                unsubscribe: Cancella abbonamento # Cancel subscription
+                connect_to_subscribe: Collega il tuo Bazaar per iscriverti alle estensioni # Connect your Bazaar to subcribe to extensions
+            extension:
+                installed: Estensione installata # Extension is installed
+                enabled: Estensione attivata # Extension is enabled
+                vendor: Da {vendor} # By {vendor}
+                downloads: Download # Downloads
+                installed_version: Versione installata # Installed version
+                highest_version: Ultima versione # Latest version
+                favorites: Preferita # Favorited
+                favorited: Una delle tue preferite # One of your favorites
+                pending: In attesa che il compito in background sia finito # Extension waits on a background task to complete
+                outdated: "Estensione obsoleta, aggiorna alla versione {new}" # "Extension is outdated, please update to version {new}"
+                premium: Premium
+                subscribed: Abbonato # Subscribed
+                subscribe_check_failed: Sembra tu abbia cancellato il pagamento # It looks like you cancelled the checkout process.
+                incompatible: Incompatibile con la tua versione di Flarum # Incompatible with your current Flarum version
+                next_incompatible: Incompatibile con la prossima versione di Flarum # Incompatible with the upcoming Flarum version
+                latest_incompatible: Incompatibile con l'ultima versione di Flarum # Incompatible with the latest Flarum version
+            task:
+                header:
+                    status: Stato # Status
+                    command: Comando # Command
+                    output: Output # Output
+                    time: Tempo # Time
+                    details: Dettagli # Details
+                attribute:
+                    created_at: Creato il # Created at
+                    started_at: Iniziato il # Started at
+                    finished_at: Finito il # Finished at
+                status:
+                    success: Successo # Success
+                    exception: Si è verificato un errore # An exception occured
+                    working: Lavori in corso # Work in progress
+                    unknown: Sconosciuto # Unknown
+                command:
+                    sync-lock: Sincronizza il file composer.lock # Sync composer.lock file
+                    sync-version: Sincronizza la versione di {extension} # Sync {extension} version
+                    install: Installa {extension} # Install {extension}
+                    update: Aggiorna {extension} # Update {extension}
+                    uninstall: Rimuovi {extension} # Uninstall {extension}
+                group:
+                    today: Oggi # Today
+                    lastmonth: Ultimo mese # Last month
+                    older: Più vecchio # Older
+        search:
+            placeholder: Cerca... # Search extensions
+            filter_installed: Installate # Installed
+            filter_update: Aggiornamento disponibile # Has update
+            filter_favorited: Preferite # Favorited
+            filter_subscribed: Abbonato # Subscribed
+            filter_premium: Premium
+            filter_pending: In attesa # Pending
+            filter_languages: Pacchetti lingue # Languages

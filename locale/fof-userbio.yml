@@ -1,0 +1,4 @@
+# https://github.com/FriendsOfFlarum/user-bio/
+fof-userbio:
+  forum:
+    userbioPlaceholder: Scrivi qualcosa su di te # Write something about yourself

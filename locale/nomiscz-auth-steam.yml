@@ -1,0 +1,31 @@
+# https://github.com/NomisCZ/flarum-ext-auth-steam
+nomiscz-auth-steam:
+  forum:
+    buttons:
+      login: Accedi con Steam # Log in with Steam
+      link: Collega il tuo account Steam # Link Steam Account
+      unlink: Scollega il tuo account Steam # Unlink Steam Account
+    alerts:
+      already_linked: Account già collegato! # Steam Account is already linked!
+      already_used: Questo account è già stato collegato da un'altro utente! # Steam Account is already linked to another user!
+      link_success: Account collegato con successo. # Steam Account link successful.
+      unlink_success: Account scollegato con successo # Steam Account unlink successful.
+      error: Qualcosa è andato storto! # Something went wrong, please try again later!
+    modals:
+      link:
+        title: Collega account Steam # Link Steam Account
+      unlink:
+        title: Scollega account Steam # Unlink Steam Account
+        info:
+          confirm: Sei sicuro di voler scollegare il tuo account Steam? # Are you sure, you want unlink your Steam account?
+          no_providers: Non hai altri modi per accedere! Probabilmente dovrai ripristinare la password.
+          # You don't have any others login providers! You'll probably have to reset your password.
+        buttons:
+          confirm: Si, scollega account # Yes, unlink account
+          cancel: No!
+  admin:
+    settings:
+      title: Impostazioni Autenticazione Steam # Steam Auth Settings
+      api_key_label: Chiave API # API Key
+      use_steam_powered_domain: Usa il dominio <b>steampowered.com</b> invece di <b>steamcommunity.com</b> (bloccato in Cina)
+      # Use steampowered.com domain instead of steamcommunity.com (blocked in China)

@@ -1,0 +1,44 @@
+# Supported extensions
+
+- Antoinefr Money
+- Extiverse Bazaar
+- Flagrow Ads
+- Flagrow Analytics
+- Flagrow Telegram
+- Flagrow Upload
+- FoF Auth Discord
+- FoF Auth GitLab
+- FoF Ban Ips
+- FoF Best Answer
+- FoF Byobu
+- FoF Custom Footer
+- FoF Drafts
+- FoF Follow Tags
+- FoF Formatting
+- FoF Forum Statistics Widget
+- FoF GeoIP
+- FoF GitHub Sponsors
+- FoF HTML Errors
+- FoF Ignore Users
+- FoF Links
+- FoF Masquerade
+- FoF Merge Discussions
+- FoF Nightmode
+- FoF Open Collective
+- FoF Pages
+- FoF Polls
+- FoF Pretty Email
+- FoF Prevent Necrobumping
+- FoF reCAPTCHA
+- FoF Secure HTTPS
+- FoF Sentry
+- FoF Share Social
+- FoF Spamblock
+- FoF Split
+- FoF StopForumSpam
+- FoF Terms
+- FoF Transliterator
+- FoF User Bio
+- Nomiscz Auth Steam
+- Reflar Two Factor
+- Wiseclock Reply2see
