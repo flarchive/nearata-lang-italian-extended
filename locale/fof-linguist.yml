@@ -1,0 +1,38 @@
+# https://github.com/FriendsOfFlarum/linguist/
+fof-linguist:
+    admin:
+        menu:
+            title: FoF Linguist # Linguist
+            description: Personalizza le traduzioni. # Customize translations.
+        buttons:
+            apply: Applica # Apply
+            reset: Ripristina originale # Restore original
+            copy-original: Copia testo originale # Copy original text
+            load-more: Carica altro # Load more
+        locales:
+            all: Tutto # All
+        placeholder:
+            not-translated: Non tradotta # Not translated
+            all-locales: Un testo impostato qui sarà utilizzato in tutte le traduzioni # A text defined here will be shown in all languages
+            hint: "Valore originale:" # Original value:
+        filters:
+            search: Cerca stringa... # Search translation strings...
+            with-own-translations: Le mie traduzioni # My translations
+            with-original-translations-in-locales: Con traduzione originale # With original translations in
+            without-original-translations-in-locales: Senza traduzione originale # Without original translations in
+            for-extension: Per estensione # For extension
+            for-extension-unavailable: >
+                Nessuna traduzione è stata trovata con namespace "{namespace}".
+                Forse questa estensione non ha testo traducibile oppure usa un nome differente come namespace.
+                Prova a usare il campo cerca per trovare le stringhe.
+              # No translations were found in the expected namespace "{namespace}".
+              # Maybe this extension doesn't have any text to translate or is using a different namespace.
+              # Try using the search field to locate its translations.
+            results: Mostrando {shown} di {total} traduzioni totali # Showing {shown} of {total} matching translations
+        clear-cache:
+            text: >
+                Le nuove traduzioni non sono state ancora applicate.
+                Nota: pulire la che può temporaneamente rallentare il tuo forum.
+              # New translations have not yet been applied.
+              # Note: clearing the cache can momentarily slow down your forum.
+            button: Pulisci cache # Clear cache now

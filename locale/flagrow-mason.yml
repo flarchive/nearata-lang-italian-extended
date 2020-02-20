@@ -1,0 +1,134 @@
+# https://github.com/FriendsOfFlarum/mason/
+flagrow-mason:
+    forum:
+        discussion-controls:
+            edit-answers: Modifica campi # Edit fields
+        answers-modal:
+            edit-title: Modifica campi per {title} # Edit fields for {title}
+            save: Salva campi # Save fields
+        post-answers:
+            no-answer: Nessuna risposta # No answer
+        answers:
+            choose-option: Seleziona opzione # Choose an option
+            no-option-selected: Nessun opzione selezionata # No option selected
+        tags:
+            inadequate-settings: >
+                Le impostazioni dei tag non sono configurate correttamente.
+                Permetti fino a 1 tag primario e 1 secondario oppure disattiva la funzionalità "tag come campi"
+              # Tag settings are not configured correctly.
+              # Allow up to one primary and secondary tags or disable the "Tags as fields" feature.
+            tags-label: Tag # Tags
+    admin:
+        buttons:
+            new-field: Nuovo campo # New field
+            add-field: Aggiungi campo # Add field
+            save-field: Salva cambiamenti # Save field changes
+            delete-field: Cancella campo # Delete field
+            edit-field: Clicca per modificare il campo # Click to edit field
+            add-answer: Aggiungi risposta # Add answer
+            save-answer: Salva cambiamenti # Save answer changes
+            delete-answer: Cancella risposta # Delete answer
+            show-user-answers: Mostra risposte non suggerite ({count}) # Show non-suggested answers ({count})
+        menu:
+            description: >
+                Configura campi personalizzati per le discussioni
+              # Configure custom discussion fields.
+        fields:
+            add: Aggiungi capo {fields} # Add field {field}
+            edit: Modifica campo {fields} # Edit field {field}
+            required: Richiesto # Required
+            name: Nome campo # Field name
+            name-help: >
+                Etichetta pubblicamente visibile (non traducibile)
+              # The publicly visible (non-translatable) field label.
+            description: Descrizione campo # Field description
+            description-help: >
+                Una descrizione opzionale
+              # An optional description to explain the use/need of this field.
+            min_answers_count: Minimo di risposte richieste # Minimum required answers
+            max_answers_count: Massimo di risposte permesse # Maximum allowed answers
+            show_when_empty: Mostra quando vuoto # Show when empty
+            show_when_empty-help:
+                Whether to show the field on the discussion when it has no answer
+            validation: Validazione per valori degli utenti # Validation for user values
+            user_values_allowed: Valori utente permessi # User values allowed
+            user_values_allowed-help: >
+                Se attivato, gli utenti potranno aggiungere valori personalizzati invece di quelli definiti dagli admin.
+                Questi valori saranno controllati con l'impostazione "Validation"
+                Se disattivata, saranno in grado solo di "suggerore" le risposte.
+              # If enabled, users can add their own values instead of the ones defined by the admin.
+              # These values will be checked against the "Validation" setting.
+              # If disabled they will only be able to use "suggested" answers.
+            validation-help: >
+                Controlla la lista delle <a>Regole di validazione di Laravel</a>. Es:
+                "string|min:5" oppure "url".
+              # Check the supported <a>Laravel validation rules</a>. Eg:
+              # "string|min:5" or "url".
+            enable-user-values-for-validation: Attiva "valori utenti" per configurare regole di validazione # Enable "user values" to configure validation rules
+            icon: Icona # Icon
+            icon-help: >
+                Shows an icon in front of values entered by the user. For a reference of
+                available icons, check the <a>FontAwesome website</a>.
+                Use the full icon class name including prefix, for example "fas fa-bolt".
+            icon-preview: "anteprima: {preview}" # "preview: {preview}"
+            save-field-for-answers: Salva il campo per aggiungere risposte # Save the field to add answers
+            is_suggested: Suggerisci risposta agli utenti # Suggest answer to users
+            new-answer-placeholder: Testo # Some text
+        messages:
+            delete-answer-confirmation: >
+                Sei sicuro di voler cancellare la risposta "{content}"?
+                Sarà rimossa da tutte le discussione che la usano.
+                Se vuoi mantenere le attuali risposte, disattiva il suggerimento della risposta.
+                Cancella la risposta?
+              # Are you sure you want to delete answer "{content}"?
+              # It will be removed from all discussions that use it.
+              # If you want to keep existing answers disable answer suggestion instead.
+              # Delete answer?
+            delete-field-confirmation: >
+                Sei sicuro di voler cancellare il campo "{name}"?
+                Questo campo e tutte le risposte presenti saranno
+                rimosse da tutte le discussioni che usano questo campo.
+                Cancellare il campo?
+              # Are you sure you want to delete field "{name}"?
+              # The field and its answers will be removed from all discussions that use them.
+              # Delete field?
+        settings:
+            fields-section-title: Titolo # Title of the custom fields section
+            fields-section-title-placeholder: Di predefinito, alcun titolo sarà visualizzato # By default no title will be shown
+            fields-section-title-help: >
+                Gli utenti vedranno questo tempo sopra i campi personalizzati nell'editor e sulla discussione.
+              # Users will see this text above the custom fields in the editor and on the discussion.
+            column-count: Numero di colonne mostrate durante la visualizzazione dei campi # Number of columns when showing the fields
+            n-columns: "{count} colonne" # "{count} columns"
+            labels-as-placeholders: Mostra etichette come segnaposto nel form # Show labels as placeholders in the form
+            labels-as-placeholders-help: >
+                I campi useranno meno spazio verticale e le icone non saranno più visibili.
+                Tieni a mente che potrebbe avere un impatto sull'usabilità, in particolare, durante la modifica di campi esistenti.
+              # Fields will use less vertical space and icons won't be shown anymore.
+              # Keep in mind this might have an impact on usability, in particular when editing existing fields.
+            fields-in-hero:  # Show fields in the discussion banner instead of the first post
+            hide-empty-fields-section: Nascondi il titolo ed i controlli quando tutti i campi sono vuoti o nascosti # Hide title and controls when all fields are empty and hidden
+            hide-empty-fields-section-help: >
+                Di predefinito se un utente può modificare i campi oppure un titolo è stato impostato, la sezione sarà sempre visibile, anche se tutti i campi sono nascosti.
+                Con questa opzione attiva, la sezione sarà invisibile e il bottone "modifica campi" sarà solo disponibile all'interno del menu a tendina "rispondi" quando tutti i campi sono vuoti.
+              # By default if the user can edit fields or a title has been set, the section will always be shown, even if all fields are hidden.
+              # With this option enabled, the section will be hidden and the "edit fields" button will only be available inside the "reply" dropdown menu when all fields are blank.
+            tags-as-field: Mostra il selettore dei tag come un campo # Show tags selector as a field
+            tags-as-field-help: >
+                Questo nasconderà il selettore predefinito dei tag e mostrerà il menu a tendina del campo.
+                Funzionerà solo se hai consentito un massimo di 1 tag primario e 1 secondario!
+              # This will hide the default tags selector and show a custom dropdown field instead.
+              # This will only work if you allowed up to one primary and one secondary tag !
+            tags-field-name: Etichetta del campo tag # Label of the tags field
+            tags-field-name-placeholder: => flagrow-mason.forum.tags.tags-label
+        titles:
+            settings: Impostazioni # Settings
+            fields: Campi # Fields
+        permissions:
+            mason-heading: Mason
+            see-own-fields: Vedi campi sulle proprie discussioni esistenti # See fields on own existing discussions
+            see-other-fields: Vedi campi su tutte le discussioni esistenti # See fields on all existing discussions
+            fill-fields: Riempire i campi nelle nuove discussioni # Fill fields on new discussions
+            update-own-fields: Aggiornare i campi delle proprie discussioni # Update fields of own discussion
+            update-other-fields: Aggiornare i campi di qualsiasi discussione # Update fields of any discussion
+            skip-required-fields: Saltare i campi obbligatori # Allowed to skip required fields

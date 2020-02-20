@@ -1,0 +1,12 @@
+# https://github.com/FriendsOfFlarum/transliterator
+fof-transliterator:
+  admin:
+    settings:
+      modal_title: Impostazioni FoF Transliterator # FriendsOfFlarum Transliterator Settings
+      parse_button: Analizza le discussioni esistenti # Parse existing discussions
+      result: "Analizzata 1 discussione|Analizzate {count} discussioni" # "Parsed 1 discussion|Parsed {count} discussions"
+
+      package_label: Transliterator da utilizzare # Transliterator Package
+      package_behat_label: Behat (predefinito) # Behat (default)
+      package_php_label: PHP (richiede ext-intl) # PHP (requires ext-intl)
+      package_php2_label: "PHP #2 (richiede ext-intl)" # "PHP #2 (requires ext-intl)"

@@ -1,0 +1,70 @@
+# https://github.com/FriendsOfFlarum/byobu
+fof-byobu:
+    forum:
+        badges:
+            is_private:
+                tooltip: Discussione privata # Private discussion
+        buttons:
+            add_recipients: Destinatari # Recipients
+            submit: OK
+            edit_recipients: Modifica destinatari # Edit Recipients
+            send_pd: "Invia un messaggio a {username}" # "Send {username} a message"
+            cancel: Annulla # Cancel
+        composer_private_discussion:
+            submit_button: Crea discussione privata # Post Private Discussion
+            title_placeholder: Titolo # Private Discussion Title
+        labels:
+            recipients: "{count} Destinatario|{count} Destinatari" # "{count} Recipient|{count} Recipients"
+            user_deleted: -CANCELLATO- # -deleted-
+        nav:
+            private_discussions: Discussione privata # Private discussion
+            start_button: Inizia discussione privata # New Private Discussion
+        input:
+            search_recipients: Cerca un utente digitando almeno i primi 3 (tre) caratteri # Search recipient by typing first three characters...
+        search:
+            headings:
+                groups: Gruppi di autorizzazione # Permission Groups
+        modal:
+            titles:
+                update_recipients: Aggiorna destinatari di {title} # Update recipients of {title}
+                add_recipients: Aggiungi destinatari # Add recipients to your discussion
+            help:
+                add_recipients: Questa discussione sarà visibile solo agli utenti che sceglierai qui. Almeno un destinatario (escluso te stesso).
+                # This discussion will only be visible to the users you choose here. At least 1 recipient (other than yourself) is required
+                update_recipients: Questa discussione sarà visibile solo agli utenti che sceglierai qui. # This discussion will only be visible to the users you choose here.
+        post:
+            recipients_modified:
+                added_and_removed: "{username} ha aggiunto {added} e rimosso {removed}." # "{username} added recipients {added} and removed {removed}."
+                added: "{username} ha aggiunto {added}." # "{username} added recipients {added}."
+                removed: "{username} ha rimosso {removed}." # "{username} removed recipients {removed}."
+        user:
+            settings:
+                block_pd: Blocca discussioni private # Block private discussions
+
+            byobu_link: Discussioni private # Private Discussions
+            dropdown_label: Discussioni private # Private Discussions
+
+        notifications:
+            pd_label: Qualcuno ti ha inserito in una discussione privata # Someone includes me in a Private discussion
+            pd_reply_label: Qualcuno ha inviato un messaggio in una discussione di cui fai parte # Someone posts in a private discussion I'm a recipient of
+            pd_reply_text: "{username} ha inviato un messaggio in una discussione privata di cui fai parte" # "{username} posted in a private discussion you're a part of"
+            pd_text: "{username} ha iniziato una discussione privata con te" # "{username} started a new private discussion with you"
+
+    admin:
+        permission:
+            create_private_discussions_with_users: Creare discussioni private con utenti # Create private discussions with users
+            create_private_discussions_with_groups: Creare discussioni private con gruppi # Create private discussions with groups
+            create_private_discussions_with_blocking_users: Creare discussioni private con utenti che lo bloccano # Create private discussions with users that block it
+            edit_user_recipients: Modifica gli utenti che fanno parte di una discussione privata # Edit users partaking in private discussions
+            edit_group_recipients: Modifica i gruppo che fanno parte di una discussione privata # Edit groups partaking in private discussions
+            view_private_discussions-when-flagged: Vedi le discussioni private di altri utenti se segnalate # View private discussions of other users if flagged
+
+        settings:
+            byobu_users_page_label: Aggiungi discussioni private alla pagina dell'utente # Add private discussions to user page
+            nothing_here: Non c'è niente da vedere qui # Nothing to see here, yet
+
+    notifications:
+        private_discussion_created:
+            title: "[Private Discussion] Un utente ha iniziato una discussione privata con te" # "[Private Discussion] user started a new private discussion with you"
+        private_discussion_replied:
+            title: "[Private Discussion] Un utente ha inviato un messaggio in una discussione privata" # "[Private Discussion] user posted in a private discussion"

@@ -1,0 +1,19 @@
+# https://discuss.flarum.org/d/4699-money-extension
+antoinefr-money:
+  admin:
+    settings:
+      title: Impostazioni # Settings
+      moneyforpost: Denaro dato per un nuovo messaggio # Money given for a new post
+      moneyfordiscussion: Denaro dato per una nuova discussione # Money given for a new discussion
+      moneyname: "Nome del denaro (es: punti)" # "Name of the money (ex: [money] points)"
+      postminimumlength: Lunghezza minima messaggio per essere ricompensati (0 per disabilitare) # Post minimum length to get the money (0 to disable)
+      noshowzero: Non mostrare se il valore è uguale a zero # Do not show if the value is zero
+    permissions:
+      edit_money_label: Modificare il denaro # Edit money
+  forum:
+    user_controls:
+      money_button: Modifica denaro # Edit money
+    modal:
+      title: "Denaro di {username}" # "{username}'s money"
+      current: "Attuale: " # Current:
+      submit_button: => core.ref.save_changes

@@ -1,0 +1,13 @@
+# https://github.com/FriendsOfFlarum/passport
+flagrow-passport:
+    admin:
+        popup:
+            title: Flagrow Passport
+            field:
+                app-auth-url: OAuth URL di autenticazione # OAuth authorization url
+                app-token-url: OAuth URL token # OAuth token url
+                app-user-url: URL API per fornire i dettagli dell'utente una volta autenticato # Api URL providing user details when authenticated
+                app-id: OAuth ID applicazione # OAuth application id
+                app-secret: OAuth codice segreto dell'applicazione # OAuth application secret
+                app-scopes: OAuth campi da richiedere # OAuth scopes to request
+                button-title: Etichetta per il pulsante di accesso # Label for login button
