@@ -2,13 +2,15 @@
 
 > **Read-only archive of released versions of nearata/lang-italian-extended.** Not for installation: use [Packagist](https://packagist.org/packages/nearata/lang-italian-extended) or the [upstream repository](https://github.com/Nearata/lang-italian-extended).
 
-**0** versions archived · Latest: [`v1.2`](https://github.com/flarchive/nearata-lang-italian-extended/tree/archive/v1.2) · License: `MIT` · Flarum: `^0.1.0-beta.11`
+**3** versions archived · Latest: [`v1.2`](https://github.com/flarchive/nearata-lang-italian-extended/tree/archive/v1.2) · License: `MIT` · Flarum: `^0.1.0-beta.11`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0` | 2020-02-15 | `^0.1.0-beta.11` | [Browse](https://github.com/flarchive/nearata-lang-italian-extended/tree/archive/v1.0) |
+| `v1.1` | 2020-02-17 | `^0.1.0-beta.11` | [Browse](https://github.com/flarchive/nearata-lang-italian-extended/tree/archive/v1.1) |
+| `v1.2` | 2020-02-20 | `^0.1.0-beta.11` | [Browse](https://github.com/flarchive/nearata-lang-italian-extended/tree/archive/v1.2) |
 
 Catalog entry: [packages/nearata-lang-italian-extended.json](https://github.com/flarchive/archive-index/blob/main/packages/nearata-lang-italian-extended.json)
 
